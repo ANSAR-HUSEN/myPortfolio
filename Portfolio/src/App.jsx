@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , useLocation} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
@@ -7,15 +7,27 @@ import Contact from "./pages/Contact/Contact";
 import Skills from "./pages/Skills/Skills";
 import Resume from "./pages/Resume/Resume";
 import NavBar from "./components/NavBar/NavBar";
+import ParticlesComponent from "./components/Particles";
+import Particles from "@tsparticles/react";
 import "./App.css";
 
 
 function App() {
+  const location = useLocation();
+  // console.log(location);
+
+  const renderParticlesInHome = location.pathname === "/";
 
  
   return (
     <div>
       {/* particle js */}
+
+      {
+        renderParticlesInHome &&  <ParticlesComponent id="particles"  />
+      }
+
+     
       
 
       {/* navbar  */}
