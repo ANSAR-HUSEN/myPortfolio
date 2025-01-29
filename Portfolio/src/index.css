@@ -1,0 +1,29 @@
+/* import roboto font+slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+/*four root colors */
+:root {
+    --yellow-background-color: #1d1d1d;
+    --yellow-main-color: #ffdd40;
+    --yellow-sub-text-color: #ffffff;
+    --yellow-nav-background-color: #181818;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    background-color: var(--yellow-background-color);
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
