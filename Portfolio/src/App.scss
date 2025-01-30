@@ -1,0 +1,8 @@
+.app {
+    height: 100%;
+    
+
+    &__pages {
+        height:calc(100% - 80px);
+    }
+}
