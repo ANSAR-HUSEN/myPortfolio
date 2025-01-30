@@ -9,7 +9,7 @@ import Resume from "./pages/Resume/Resume";
 import NavBar from "./components/NavBar/NavBar";
 import ParticlesComponent from "./components/Particles";
 import Particles from "@tsparticles/react";
-import "./App.css";
+import "./App.scss";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
 
  
   return (
-    <div>
+    <div className="app">
       {/* particle js */}
 
       {
@@ -34,6 +34,7 @@ function App() {
       <NavBar />
 
       {/* main pages */}
+      <div className="app__pages">
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route index path="/about" element={<About />} />
@@ -42,6 +43,9 @@ function App() {
         <Route index path="/skills" element={<Skills />} />
         <Route index path="/resume" element={<Resume />} />
       </Routes>
+
+      </div>
+      
     </div>
   );
 }
