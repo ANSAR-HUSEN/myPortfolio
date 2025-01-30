@@ -1,0 +1,99 @@
+.about{
+    &__content{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+
+        &__personalwrapper,&__serviceswrapper{
+            width: 50%;
+
+        }
+        &__personalwrapper{
+            h3{
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--yellow-main-color);
+
+
+            }
+            h3.personalinfoheadertext{
+                padding-top: 20px;
+            }
+            p{
+                color: var(--yellow-sub-text-color);
+                font-size: 1.8rem;
+                line-height: 1.65;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed var(--yellow-main-color);
+            }
+            ul > li {
+                line-height: 1rem;
+                margin-bottom: 15px;
+                
+                span.title, span.value {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.5;
+                    border-bottom: 2px solid var(--yellow-main-color);
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 16px;
+                    padding-bottom: 5px;
+                    color: var(--yellow-sub-text-color);
+                }
+                span.value{
+                    border: none;
+                }
+            }
+        }
+
+        &__serviceswrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__innercontent{
+                width: 300px;
+                height: 300px;
+                background: radial-gradient(180px, var(--yellow-main-color),transparent 90%);
+                position: relative;
+                border-radius: 50%;
+                border: 1.5px solid var(--yellow-main-color);
+
+                div:nth-child(1){
+                    position: absolute;
+                    top: -9%;
+                    left: 41%;
+    
+                }
+                div:nth-child(2){
+                    
+                position: absolute;
+                right: -8%;
+                top: 41.5%;
+                    
+                }
+                div:nth-child(3){
+                    position: absolute;
+                    bottom: -10%;
+                    left: 41%;
+                    
+                }
+                div:nth-child(4){
+                    position: absolute;
+                    left: -8%;
+                    top: 41%;
+                    
+                }
+            }
+
+           
+
+        }
+        
+       
+
+    }
+
+}
