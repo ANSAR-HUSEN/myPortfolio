@@ -60,6 +60,7 @@
                 position: relative;
                 border-radius: 50%;
                 border: 1.5px solid var(--yellow-main-color);
+                animation: rotation 10s linear infinite;
 
                 div:nth-child(1){
                     position: absolute;
@@ -96,4 +97,10 @@
 
     }
 
+}
+@keyframes rotation {
+   
+    100% {
+        transform: rotate(360deg);
+    }
 }
