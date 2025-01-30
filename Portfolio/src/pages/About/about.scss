@@ -54,8 +54,8 @@
             justify-content: center;
             align-items: center;
             &__innercontent{
-                width: 300px;
-                height: 300px;
+                width: 320px;
+                height: 320px;
                 background: radial-gradient(180px, var(--yellow-main-color),transparent 90%);
                 position: relative;
                 border-radius: 50%;
@@ -102,5 +102,44 @@
    
     100% {
         transform: rotate(360deg);
+    }
+}
+
+// mobile responsive below 768px
+@media only screen and (max-width:768px){
+    .about__content{
+        flex-direction: column;
+
+        &__personalwrapper,&__serviceswrapper{
+            width: 100%;
+
+            &__serviceswrapper{
+                margin: 10px 0;
+
+                &__innercontent{
+                    width: 250px;
+                    height: 250px;
+                    background: radial-gradient(180px, var(--yellow-main-color),transparent 120%);
+                    div:nth-child(1){
+                        top: -8%;
+                        left: 41%;
+                    }
+                    div:nth-child(2){
+                        right: -8%;
+                        top: 41.5%;
+                    }
+                    div:nth-child(3){
+                        bottom: -8%;
+                        left: 41%;
+                    }
+                    div:nth-child(4){
+                        left: -8%;
+                        top: 41%;
+                    }
+                }
+            }
+
+        }
+
     }
 }
