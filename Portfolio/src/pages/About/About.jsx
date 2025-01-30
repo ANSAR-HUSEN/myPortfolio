@@ -66,6 +66,17 @@ function About() {
           </Animate>
         </div>
         <div className="about__content__serviceswrapper">
+        <Animate
+            play
+            duration={1.5}
+            delay={1}
+            start={{
+              transform: "translateX(600px)",
+            }}
+            end={{
+              transform: "translatex(0)",
+            }}
+          >
           <div className="about__content__serviceswrapper__innercontent">
             <div>
               <FaDev size={60} color="var(--yellow-main-color)" />
@@ -80,6 +91,7 @@ function About() {
               <DiApple oid size={60} color="var(--yellow-main-color)" />
             </div>
           </div>
+          </Animate>
         </div>
       </div>
     </search>
