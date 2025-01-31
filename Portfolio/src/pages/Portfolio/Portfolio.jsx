@@ -2,7 +2,7 @@ import React from 'react'
 import PageHeaderContent from '../../components/PageHeaderContent/PageHeaderContent'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import amazon from '../../images/image1.jpg'
-import apple from '../../images/image2.jpg'
+
 import forum from '../../images/image3.jpg'
 import netflix from '../../images/image4.jpg'
 import './portfolio.scss'
@@ -15,16 +15,16 @@ function Portfolio() {
       title: "Amazon Clone",
       image: amazon,
       description: "Amazon Clone is a web application that is built using React.js, Redux, Firebase, and Stripe API. It is a fully functional e-commerce website that allows users to browse products, add them to the cart, and checkout using the Stripe payment gateway.",
-      techStack: ["React.js", "Redux", "Firebase", "Stripe API"],
+      techStack: ["React.js", "Node.js", "Firebase", "Stripe API"],
       githubLink: " ",
       liveDemoLink: " ",
     },
     
     {
-      title: "Forum Clone",
+      title: "Evangadi Forum ",
       image: forum,
       description: "Forum Clone is a web application that is built using React.js and Firebase. It is a platform where users can create an account, post questions, and answer questions posted by other users. The website is responsive and optimized for all devices.",
-      techStack: ["React.js", "Firebase"],
+      techStack: ["React.js", "Node.js", "mySQL"],
       githubLink: " ",
       liveDemoLink: " ",
     },
@@ -32,7 +32,7 @@ function Portfolio() {
       title: "Netflix Clone",
       image: netflix,
       description: "Netflix Clone is a web application that is built using React.js and Firebase. It is a fully functional movie streaming website that allows users to browse movies, watch trailers, and sign up for an account. The website is responsive and optimized for all devices.",
-      techStack: ["React.js", "Firebase"],
+      techStack: ["React.js", "Node.js", "Firebase"],
       githubLink: " ",
       liveDemoLink: " ",
     }];
