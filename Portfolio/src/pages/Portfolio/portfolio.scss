@@ -1,0 +1,95 @@
+.portfolio__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 10%;
+    
+
+    &__image{
+        padding: 20px;
+        width: 50%;
+        height: 300px;
+       
+       
+
+    
+       
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text{
+        color: var(--yellow-sub-text-color);
+        padding: 20px;
+        
+       
+        h3{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--yellow-main-color);
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 1.65;
+            width: 50%;
+            align-items: center;
+            padding-bottom: 20px;
+            
+            
+        }
+    }
+    
+
+
+
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5;
+        // border-bottom: 2px solid var(--yellow-main-color);
+        position: relative;
+        display: inline-block;
+        margin-right: 16px;
+        padding-bottom: 5px;
+        color: var(--yellow-sub-text-color);
+    }
+
+    &__links{
+        display: flex;
+        font-size: medium;
+        padding-top: 20px;
+        gap: 20px;
+
+        Link{
+            text-decoration: none;
+        }
+        
+    }
+}
+
+// mobile view
+@media screen and (max-width: 768px){
+    .portfolio__content{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 20px;
+        &__image{
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+        &__text{
+            width: 100%;
+            align-items: center;
+    
+            
+            
+        }
+    }
+}

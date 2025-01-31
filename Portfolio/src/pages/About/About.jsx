@@ -15,7 +15,7 @@ function About() {
   ];
 
   const jobsummary =
-    "I am a full stack developer with a passion for creating and developing web applications. I have experience in building web applications using JavaScript, React, Node.js, and MongoDB. I am a quick learner and a team player who is always looking to grow and improve my skills.";
+    "I thrive at the intersection of design and technology, where creativity meets functionality. My expertise lies in building dynamic, high-performance interfaces that not only look great but also deliver seamless user experiences. Whether it’s crafting pixel-perfect layouts, optimizing for speed and performance, or ensuring cross-browser compatibility, I’m dedicated to delivering solutions that exceed expectations. I’m also passionate about staying up-to-date with the latest trends and best practices in web development, from responsive design and accessibility (WCAG compliance) to progressive web apps (PWAs) and performance optimization.";
 
   return (
     <search id="about" className="about">
