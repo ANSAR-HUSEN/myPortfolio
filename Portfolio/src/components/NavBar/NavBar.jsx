@@ -24,11 +24,11 @@ const data = [
     to: "/contact",
   },
   {
-    label: "SKILLS",
+    label: "",
     to: "/skills",
   },
   {
-    label: "RESUME",
+    label: "",
     to: "/resume",
   },
 ];

@@ -3,11 +3,14 @@
     justify-content: space-between;
     gap: 50px;
     margin-left: 10%;
+    border-left: 1px dashed var(--yellow-main-color);
+    border-right: 1px dashed var(--yellow-main-color);
+    
     
 
     &__image{
         padding: 20px;
-        width: 50%;
+        width: 70%;
         height: 300px;
        
        

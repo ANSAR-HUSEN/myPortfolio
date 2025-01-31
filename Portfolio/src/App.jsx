@@ -40,8 +40,8 @@ function App() {
         <Route index path="/about" element={<About />} />
         <Route index path="/portfolio" element={<Portfolio />} />
         <Route index path="/contact" element={<Contact />} />
-        <Route index path="/skills" element={<Skills />} />
-        <Route index path="/resume" element={<Resume />} />
+        {/* <Route index path="/skills" element={<Skills />} />
+        <Route index path="/resume" element={<Resume />} /> */}
       </Routes>
 
       </div>

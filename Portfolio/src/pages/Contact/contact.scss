@@ -1,0 +1,108 @@
+.contact {
+  &__content {
+    padding: 20px;
+
+    &__title {
+      color: var(--yellow-sub-text-color);
+      font-size: 22px;
+      font-weight: 600;
+      display: inline-block;
+      line-height: 1em;
+      letter-spacing: 0.5px;
+      position: relative;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 2px solid var(--yellow-main-color);
+    }
+    &__title::before,
+    &__title::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 5px;
+      background-color: var(--yellow-main-color);
+      bottom: -1px;
+    }
+    &__title::before {
+      left: 0;
+    }
+    &__title::after {
+      right: 0;
+    }
+
+    &__form {
+      margin-top: 30px;
+
+      &__controlswrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 30px;
+
+        div {
+          position: relative;
+
+          .inputname,
+          .inputemail,
+          .inputdesc {
+            width: 100%;
+            border: 2px solid var(--yellow-main-color);
+            padding: 16px 12px;
+            transition: all 0.5s ease;
+            position: relative;
+            background-color: transparent;
+            color: var(--yellow-sub-text-color);
+          }
+          .namelabel,
+          .emaillabel,
+          .desclabel {
+            font-weight: 500;
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            transition: all 0.2s ease;
+            color: var(--yellow-sub-text-color);
+            font-size: 16px;
+          }
+
+          .inputname:focus,
+          .inputemail:focus,
+          .inputdesc:focus{
+            outline: none;
+
+          }
+        }
+      }
+    }
+    button{
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        font-weight: 500;
+        background: transparent;
+        color: var(--yellow-main-color);
+        border: 1.5px solid var(--yellow-main-color);
+        border-radius: 4px;
+
+        &:hover{
+            background: var(--yellow-main-color);
+            color: black;}
+
+    }
+  }
+}
+
+// media queries
+@media screen and (max-width: 768px) {
+  .contact {
+    &__content {
+        
+      &__form {
+        text-align: center;
+        &__controlswrapper {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+}
